@@ -1,6 +1,12 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from "vue-router";
 import HelloWorld from "./components/HelloWorld.vue";
+import { useGlobalStore } from "./stores/globalStore";
+// eslint-disable-next-line no-console
+console.log(
+  "useGlobalStore().allPiniaStores",
+  useGlobalStore().allPiniaStores.get("counter")
+);
 </script>
 
 <template>
